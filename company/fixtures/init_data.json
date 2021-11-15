@@ -1,0 +1,68 @@
+[
+    {
+        "model": "company.Department",
+        "pk": 1,
+        "fields": {
+            "name": "first"
+        }
+    },
+    {
+        "model": "company.Department",
+        "pk": 2,
+        "fields": {
+            "name": "second"
+        }
+    },
+    {
+        "model": "company.Employee",
+        "pk": 1,
+        "fields": {
+            "first_name": "Иван",
+            "last_name": "Иванов",
+            "middle_name": "Иванович",
+            "position": "Слесарь",
+            "salary": 111.11,
+            "age": 40,
+            "department": 1
+        }
+    },
+    {
+        "model": "company.Employee",
+        "pk": 2,
+        "fields": {
+            "first_name": "Петр",
+            "last_name": "Петров",
+            "middle_name": "Петрович",
+            "position": "Грузчик",
+            "salary": 50.00,
+            "age": 30,
+            "department": 1
+        }
+    },
+    {
+        "model": "company.Employee",
+        "pk": 3,
+        "fields": {
+            "first_name": "Анна",
+            "last_name": "Аннова",
+            "middle_name": "Анновна",
+            "position": "Менеджер",
+            "salary": 320,
+            "age": 35,
+            "department": 2
+        }
+    },
+    {
+        "model": "company.Employee",
+        "pk": 4,
+        "fields": {
+            "first_name": "Виктор",
+            "last_name": "Петров",
+            "middle_name": "Васильевич",
+            "position": "Директор",
+            "salary": 1000,
+            "age": 55,
+            "department": 2
+        }
+    }
+]

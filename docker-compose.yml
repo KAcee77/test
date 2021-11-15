@@ -2,6 +2,7 @@ version: '3'
 services:
   app:
     build: .
-    command: bash -c "python /code/manage.py migrate --noinput && python /code/manage.py runserver"
+    command: bash -c "python /code/manage.py migrate --noinput && 
+             python /code/manage.py loaddata init_data.json && python /code/manage.py runserver 0.0.0.0:8000"
     ports:
     - 8000:8000
