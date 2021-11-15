@@ -9,13 +9,14 @@ class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Employee
         fields = [
-            'name',
+            'first_name',
             'last_name',
-            'patronymic',
+            'middle_name',
             'photo',
             'position',
             'salary',
-            'age'
+            'age',
+            'department'
         ]
 
 
