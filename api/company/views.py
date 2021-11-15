@@ -5,8 +5,8 @@ from rest_framework.permissions import IsAuthenticated
 
 from company.models import Department, Employee
 
-from .filters import EmployeeFilter
-from .serializers import DepartmentSerializer, EmployeeSerializer
+from api.company.filters import EmployeeFilter
+from api.company.serializers import DepartmentSerializer, EmployeeSerializer
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):
@@ -17,7 +17,6 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     filter_class = EmployeeFilter
     permission_classes = [IsAuthenticated]
     pagination_class = CustomPageNumberPagination
-
 
 
 class DepartmentViewSet(viewsets.ModelViewSet):

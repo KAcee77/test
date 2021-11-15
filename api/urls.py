@@ -1,7 +1,7 @@
 from django.urls import include, path
 from rest_framework import routers
 
-from .company.views import DepartmentViewSet, EmployeeViewSet
+from api.company.views import DepartmentViewSet, EmployeeViewSet
 
 router = routers.DefaultRouter()
 

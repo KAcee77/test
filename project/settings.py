@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # local apps
     'company',
 
-    #external apps
+    # external apps
     'rest_framework',
     'django_filters',
 
@@ -139,12 +139,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Rest_framework
+
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 20
 }
 
 #Media dir
+
 _PATH = os.path.abspath(os.path.dirname(__file__))
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

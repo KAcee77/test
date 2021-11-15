@@ -1,5 +1,5 @@
 import django_filters
-from company.models import Employee, Department
+from company.models import Employee
 
 
 class EmployeeFilter(django_filters.FilterSet):
@@ -12,3 +12,4 @@ class EmployeeFilter(django_filters.FilterSet):
             'department_id',
             'last_name',
         ]
+       
