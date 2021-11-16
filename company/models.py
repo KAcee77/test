@@ -27,6 +27,9 @@ class Employee(models.Model):
         return f'{self.first_name} {self.last_name} {self.middle_name}'
     
     class Meta:
+        indexes = [
+            models.Index(fields=['last_name']),
+        ]
         ordering = ['first_name', 'last_name']
         verbose_name = 'Сотрудник'
         verbose_name_plural = 'Сотрудники'
