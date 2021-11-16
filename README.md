@@ -1,5 +1,8 @@
 # test work
 ---
+# Descriptopn
+Проект реализован на Django
+
 ## Start:
 * Должен быть установлен интерпретатор python версии 3.8 и выше
 * В корневой папке создать виртуальное окружение ``python3 -m venv venv`` 
@@ -7,6 +10,7 @@
 * Установить зависимости ``pip install -r requirements.txt``
 * Инициализировать базу ``python manage.py migrate``
 * Создать админа ``python manage.py createsuperuser``
+* Инциализировать тестовые данные ``python manage.py loaddata init_data.json``
 * Запустить сервер ``python manage.py runserver``
 
 ## Start in docker:
